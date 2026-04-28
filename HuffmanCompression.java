@@ -11,7 +11,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class HuffmanCompression {
 
-    private static Node currentTreeRoot        = null;
+    private static Node currentTreeRoot = null;
     private static String currentCompressedStream = null;
 
     // Count how often each character appears in the input
@@ -122,16 +122,16 @@ public class HuffmanCompression {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n========================================");
-            System.out.println("    HUFFMAN COMPRESSION SYSTEM v1.1     ");
-            System.out.println("========================================");
+            System.out.println("\n==========================================");
+            System.out.println("FILE COMPRESSION AND DECOMPRESSION SYSTEM");
+            System.out.println("==========================================");
             System.out.println("  1. Compress a string");
             System.out.println("  2. Compress a text file");
             System.out.println("  3. Decompress last result");
             System.out.println("  4. View current bit stream");
             System.out.println("  0. Exit");
             System.out.println("========================================");
-            System.out.print("Option: ");
+            System.out.print("Option (0-4): ");
 
             String choice = scanner.nextLine().trim();
 
